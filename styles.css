@@ -1,9 +1,9 @@
 body {
-  animation-name: backgroundChange;
+  /*animation-name: backgroundChange;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;*/
 }
 
 .moveme {
@@ -16,12 +16,13 @@ body {
   height: 200px;
   padding: 0 1em;
   background-color: red;
-  animation-name: movingBox;
+  /*animation-name: movingBox;*/
   animation-duration: 5s;
   animation-iteration-count: 1; /* infinite */
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
 }
+
 
 /*
   good:
