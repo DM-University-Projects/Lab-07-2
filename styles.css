@@ -22,7 +22,13 @@ body {
   animation-direction: alternate;
   animation-timing-function: ease-in-out;
 }
-
+.moveme:hover {
+  animation-name: changingBox;
+  animation-duration: 2s;
+  animation-iteration-count: 1; /* infinite */
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
 
 /*
   good:
@@ -38,6 +44,12 @@ body {
   50%  { background-color:rgb(64, 224, 208); left: calc(100% - 200px); top: calc(100% - 200px); border-radius: 50%; }
   75%  { background-color:rgb(147, 112, 216); left: 0; top: calc(100% - 200px); }
   100% { background-color:rgb(255, 0, 0); left: 0px; top: 0px; }
+}
+
+@keyframes changingBox {
+  0%   { background-color:rgb(255, 0, 0); left: 0px; transform: rotate(0) }
+  50%  { background-color:rgb(147, 112, 216); left: calc(100% - 200px); top: calc(100% - 200px); transform: rotate(180deg); height: 200px; width: 200px }
+  100% { background-color:rgb(255, 0, 0); left: 0px; transform: rotate(360deg) }
 }
 
 @keyframes backgroundChange {
